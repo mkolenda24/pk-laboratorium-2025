@@ -103,7 +103,7 @@ int main() {
     printDirectoryInfo(dir);  // Zadanie 2
     copyFileIfNotExists(copy_file, "katalog2/usmiech.png");  // Zadanie 3
     deleteDirOrFile("katalog2/usmiech.png");  // Zadanie 4
-    count = countFiles("icons");  // Zadanie 5
+    count = countFiles("katalog");  // Zadanie 5
 
     return 0;
 }
