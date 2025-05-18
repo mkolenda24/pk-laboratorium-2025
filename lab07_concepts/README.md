@@ -1,47 +1,47 @@
-# Lab 7 – Koncepty w C++20
+# Lab 7 â€“ Koncepty w C++20
 
 ## Temat
 
-U¿ycie konceptów w funkcjach i klasach szablonowych w jêzyku C++20.
+UÂ¿ycie konceptÃ³w w funkcjach i klasach szablonowych w jÃªzyku C++20.
 
 ## Zadanie
 
-Napisz funkcjê szablonow¹ `print_even`, która:
+Napisz funkcjÃª szablonowÂ¹ `print_even`, ktÃ³ra:
 
 - przyjmuje kontener (np. `std::vector`, `std::list`, `std::array`),
 - wypisuje tylko **parzyste elementy**.
 
 ### Warunki:
 
-- Kontener musi byæ iterowalny (`begin()`, `end()`),
-- Typ elementu musi wspieraæ:
+- Kontener musi byÃ¦ iterowalny (`begin()`, `end()`),
+- Typ elementu musi wspieraÃ¦:
   - operator `%` i `==`,
   - operator `<<` dla `std::ostream`.
 
 ## Wymagania
 
 1. Zdefiniuj trzy koncepty:
-   - `IsIterable<T>` – sprawdza `begin()` i `end()`,
-   - `HasModAndEquality<T>` – sprawdza `%` i `== 0`,
-   - `IsStreamInsertable<T>` – sprawdza mo¿liwoœæ wypisania przez `<<`.
+   - `IsIterable<T>` â€“ sprawdza `begin()` i `end()`,
+   - `HasModAndEquality<T>` â€“ sprawdza `%` i `== 0`,
+   - `IsStreamInsertable<T>` â€“ sprawdza moÂ¿liwoÅ“Ã¦ wypisania przez `<<`.
 
-2. U¿yj ró¿nych stylów definicji:
-   - `requires(...)` w nag³ówku,
+2. UÂ¿yj rÃ³Â¿nych stylÃ³w definicji:
+   - `requires(...)` w nagÂ³Ã³wku,
    - `requires { ... }` w ciele,
-   - po³¹czenie konceptów typu `std::same_as`, `std::input_iterator`.
+   - poÂ³Â¹czenie konceptÃ³w typu `std::same_as`, `std::input_iterator`.
 
 3. Zaimplementuj `print_even` jako:
-   - funkcjê wolnostoj¹c¹,
-   - metodê klasy szablonowej `EvenPrinter`.
+   - funkcjÃª wolnostojÂ¹cÂ¹,
+   - metodÃª klasy szablonowej `EvenPrinter`.
 
 4. Przetestuj na:
    - `std::vector<int>`,
    - `std::list<int>`,
    - `std::array<int, N>`.
 
-5. Dodaj przyk³ad, który nie przejdzie (np. `std::vector<std::string>`).
+5. Dodaj przykÅ‚ad, ktÃ³ry nie przejdzie (np. `std::vector<std::string>`).
 
-## Przyk³ad u¿ycia
+## PrzykÅ‚ad uÂ¿ycia
 
 ```cpp
     std::vector<int> vec = { 1, 2, 3, 4, 5 };
