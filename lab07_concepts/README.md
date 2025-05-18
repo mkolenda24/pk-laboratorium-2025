@@ -2,19 +2,19 @@
 
 ## Temat
 
-U¿ycie konceptów w funkcjach i klasach szablonowych w jêzyku C++20.
+Użycie konceptów w funkcjach i klasach szablonowych w języku C++20.
 
 ## Zadanie
 
-Napisz funkcjê szablonow¹ `print_even`, która:
+Napisz funkcję szablonów `print_even`, która:
 
 - przyjmuje kontener (np. `std::vector`, `std::list`, `std::array`),
 - wypisuje tylko **parzyste elementy**.
 
 ### Warunki:
 
-- Kontener musi byæ iterowalny (`begin()`, `end()`),
-- Typ elementu musi wspieraæ:
+- Kontener musi być iterowalny (`begin()`, `end()`),
+- Typ elementu musi wspierać:
   - operator `%` i `==`,
   - operator `<<` dla `std::ostream`.
 
@@ -23,16 +23,16 @@ Napisz funkcjê szablonow¹ `print_even`, która:
 1. Zdefiniuj trzy koncepty:
    - `IsIterable<T>` – sprawdza `begin()` i `end()`,
    - `HasModAndEquality<T>` – sprawdza `%` i `== 0`,
-   - `IsStreamInsertable<T>` – sprawdza mo¿liwoœæ wypisania przez `<<`.
+   - `IsStreamInsertable<T>` – sprawdza możliwość wypisania przez `<<`.
 
-2. U¿yj ró¿nych stylów definicji:
-   - `requires(...)` w nag³ówku,
+2. Użyj różnych stylów definicji:
+   - `requires(...)` w nagłówku,
    - `requires { ... }` w ciele,
-   - po³¹czenie konceptów typu `std::same_as`, `std::input_iterator`.
+   - połączenie konceptów typu `std::same_as`, `std::input_iterator`.
 
 3. Zaimplementuj `print_even` jako:
-   - funkcjê wolnostoj¹c¹,
-   - metodê klasy szablonowej `EvenPrinter`.
+   - funkcję wolnostojącą,
+   - metodę klasy szablonowej `EvenPrinter`.
 
 4. Przetestuj na:
    - `std::vector<int>`,
@@ -41,7 +41,7 @@ Napisz funkcjê szablonow¹ `print_even`, która:
 
 5. Dodaj przykład, który nie przejdzie (np. `std::vector<std::string>`).
 
-## Przykład u¿ycia
+## Przykład użycia
 
 ```cpp
     std::vector<int> vec = { 1, 2, 3, 4, 5 };
@@ -62,4 +62,4 @@ Napisz funkcjê szablonow¹ `print_even`, która:
 
     EvenPrinter<std::array<int, 5>> printerArr;
     printerArr.print(arr);
-
+```
