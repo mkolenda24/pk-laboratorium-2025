@@ -18,8 +18,17 @@ Program przetwarza tekst zawierający adresy e-mail w celu ich analizy i ukrywan
 4. **Zliczanie domen**  
    Zlicza liczbę wystąpień każdej domeny w znalezionych adresach (bez rozróżniania wielkości liter).
 
-## Przykładowe dane wejściowe
+## Przykład użycia
 
-```text
-Kontakt: kowalski@o2.com, dsadas@gmailcom, marcin@interia.pl, PIOtr.Pl, info@uni.edu,
-admin@rzad.GOV, @spoko.pl, test@gmail.COM, user@GMail.com, pawel@.DE
+```cpp
+	std::cout << "zadanie 1:" << std::endl;
+	std::string email = "michal@gmail.pl";
+	check(email);
+	std::string tekst = "Kontakt: kowalski@o2.com, dsadas@gmailcom, marcin@interia.pl, PIOtr.Pl, info@uni.edu, admin@rzad.GOV, @spoko.pl, test@gmail.COM, user@GMail.com, pawel@.DE";
+	std::cout << std::endl << "zadanie 2" << std::endl;
+	std::cout << "tekst przed uktryciem:" << std::endl << tekst << std::endl << "tekst po ukryciu:" << std::endl;
+	hide(tekst);
+	std::cout << std::endl << "zadanie 3 i 4:" << std::endl;
+	search(tekst);
+```
+

@@ -19,8 +19,17 @@ Projekt z zakresu operacji na plikach i katalogach w jêzyku C++. Program umo¿liw
 5. **Liczenie plików w katalogu i podkatalogach**  
    Funkcja liczy liczbê plików w zadanym katalogu i wszystkich jego podkatalogach.
 
-## Przyk³adowe dane wejœciowe
+## Przyk³ad u¿ycia
 
-```text
-Katalog "katalog" zawiera pliki: png1.png, image.jpg
-Katalog "katalog2" zawiera plik usmiech.png
+```cpp
+ std::string dir = "katalog";
+    std::string dir2 = "katalog2";
+    std::string copy_file = "katalog/png1.png";
+    int count;
+
+    checkOrCreateDirectory(dir);  // Zadanie 1
+    printDirectoryInfo(dir);  // Zadanie 2
+    copyFileIfNotExists(copy_file, "katalog2/usmiech.png");  // Zadanie 3
+    deleteDirOrFile("katalog2/usmiech.png");  // Zadanie 4
+    count = countFiles("katalog");  // Zadanie 5
+```
