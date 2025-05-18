@@ -22,7 +22,7 @@ Projekt z zakresu operacji na plikach i katalogach w języku C++. Program umożl
 ## Przykład użycia
 
 ```cpp
- std::string dir = "katalog";
+std::string dir = "katalog";
 std::string dir2 = "katalog2";
 std::string copy_file = "katalog/png1.png";
 int count;
