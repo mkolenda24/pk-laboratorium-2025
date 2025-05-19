@@ -1,35 +1,35 @@
-# Laboratorium 3 ñ Zarzπdzanie plikami i katalogami w C++20
+# Laboratorium 3 ‚Äì ZarzƒÖdzanie plikami i katalogami w C++20
 
-Projekt z zakresu operacji na plikach i katalogach w jÍzyku C++. Program umoøliwia wykonywanie rÛønych operacji na plikach i katalogach, takich jak: tworzenie katalogÛw, wyúwietlanie zawartoúci, kopiowanie plikÛw, usuwanie plikÛw/katalogÛw oraz liczenie plikÛw.
+Projekt z zakresu operacji na plikach i katalogach w jƒôzyku C++. Program umo≈ºliwia wykonywanie r√≥≈ºnych operacji na plikach i katalogach, takich jak: tworzenie katalog√≥w, wy≈õwietlanie zawarto≈õci, kopiowanie plik√≥w, usuwanie plik√≥w/katalog√≥w oraz liczenie plik√≥w.
 
 ## Funkcje programu
 
 1. **Sprawdzanie i tworzenie katalogu**  
-   Funkcja sprawdza, czy katalog istnieje, a jeúli nie, tworzy go.
+   Funkcja sprawdza, czy katalog istnieje, a je≈õli nie, tworzy go.
 
-2. **Wyúwietlanie zawartoúci katalogu**  
-   Funkcja wyúwietla wszystkie pliki i katalogi w zadanym katalogu.
+2. **Wy≈õwietlanie zawarto≈õci katalogu**  
+   Funkcja wy≈õwietla wszystkie pliki i katalogi w zadanym katalogu.
 
 3. **Kopiowanie pliku**  
-   Funkcja kopiuje plik do katalogu docelowego, jeúli ten plik jeszcze nie istnieje.
+   Funkcja kopiuje plik do katalogu docelowego, je≈õli ten plik jeszcze nie istnieje.
 
 4. **Usuwanie pliku lub katalogu**  
    Funkcja usuwa wskazany plik lub katalog.
 
-5. **Liczenie plikÛw w katalogu i podkatalogach**  
-   Funkcja liczy liczbÍ plikÛw w zadanym katalogu i wszystkich jego podkatalogach.
+5. **Liczenie plik√≥w w katalogu i podkatalogach**  
+   Funkcja liczy liczbƒô plik√≥w w zadanym katalogu i wszystkich jego podkatalogach.
 
-## Przyk≥ad uøycia
+## Przyk≈Çad u≈ºycia
 
 ```cpp
- std::string dir = "katalog";
-    std::string dir2 = "katalog2";
-    std::string copy_file = "katalog/png1.png";
-    int count;
+std::string dir = "katalog";
+std::string dir2 = "katalog2";
+std::string copy_file = "katalog/png1.png";
+int count;
 
-    checkOrCreateDirectory(dir);  // Zadanie 1
-    printDirectoryInfo(dir);  // Zadanie 2
-    copyFileIfNotExists(copy_file, "katalog2/usmiech.png");  // Zadanie 3
-    deleteDirOrFile("katalog2/usmiech.png");  // Zadanie 4
-    count = countFiles("katalog");  // Zadanie 5
+checkOrCreateDirectory(dir);  // Zadanie 1
+printDirectoryInfo(dir);  // Zadanie 2
+copyFileIfNotExists(copy_file, "katalog2/usmiech.png");  // Zadanie 3
+deleteDirOrFile("katalog2/usmiech.png");  // Zadanie 4
+count = countFiles("katalog");  // Zadanie 5
 ```
